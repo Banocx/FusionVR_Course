@@ -38,11 +38,19 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         await LoadScene();
 
         //Conectsession
+        await Connect();
     }
 
     public async Task LoadScene()
     {
-       AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(1);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(1);
+
+        while (!asyncLoad.isDone)
+        {
+            await Task.Yield();
+
+        }
+
     }
 
     public void CreataRunner()
@@ -74,11 +82,10 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         }
     }
     // Start is called before the first frame update
-    async void Start()
+    private void Start()
     {
-        
 
-        await Connect();
+        //StartSharedSession();
     }
     void Update()
     {

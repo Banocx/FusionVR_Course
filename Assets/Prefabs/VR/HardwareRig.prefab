@@ -84,7 +84,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4529512120740097613
 Transform:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7630556110383437607
 Transform:
   m_ObjectHideFlags: 0
@@ -435,8 +435,9 @@ GameObject:
   - component: {fileID: 1133105651368907032}
   - component: {fileID: 2829285811885850526}
   - component: {fileID: 924913962155940134}
+  - component: {fileID: 8746774837279946739}
   m_Layer: 0
-  m_Name: XRRig
+  m_Name: HardwareRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,6 +511,23 @@ MonoBehaviour:
   _headTransform: {fileID: 2913610157020681972}
   _moveInput: {fileID: -3661010079789817086, guid: 9caa0d3f07ea760438df48c62289dd1f, type: 3}
   _rotateInput: {fileID: 405627352901661888, guid: 9caa0d3f07ea760438df48c62289dd1f, type: 3}
+--- !u!114 &8746774837279946739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317785862428924384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff31252c48f71f849a0247a150003637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterTransform: {fileID: 5989702591597972599}
+  _headTransform: {fileID: 2913610157020681972}
+  _bodyTransform: {fileID: 119235882570629874}
+  _leftHandTransform: {fileID: 2256208067385562596}
+  _rightHandTransform: {fileID: 9105351733113009459}
 --- !u!1 &6541416766215547578
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2884778896965968179
 Transform:
   m_ObjectHideFlags: 0
@@ -639,9 +657,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8921086306148639772}
   - component: {fileID: 5913577607697114042}
-  - component: {fileID: 828973905335615824}
-  - component: {fileID: 182510828758891722}
-  - component: {fileID: 4075004551045142220}
+  - component: {fileID: 4097676929257229567}
+  - component: {fileID: 4725871783934132526}
+  - component: {fileID: 1233934382409068832}
   m_Layer: 0
   m_Name: Hand_Right
   m_TagString: Untagged
@@ -683,7 +701,7 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
---- !u!135 &828973905335615824
+--- !u!135 &4097676929257229567
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -696,7 +714,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &182510828758891722
+--- !u!54 &4725871783934132526
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -712,7 +730,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4075004551045142220
+--- !u!114 &1233934382409068832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -730,7 +748,7 @@ MonoBehaviour:
       m_Name: Trigger
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: fcaaf975-a5e5-4ae2-8749-eb62262f3ebc
+      m_Id: e98008a8-bda3-489d-a78e-0c30e90fd3ff
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -753,7 +771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5895522592747400359
 Transform:
   m_ObjectHideFlags: 0

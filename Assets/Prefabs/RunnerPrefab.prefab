@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prayerPrefab:
-    RawGuidValue: d4159355783c7734cbe5190ac1328522
+    RawGuidValue: 30d5739f948713549acba74871ce5462
 --- !u!114 &-8597765843494155755
 MonoBehaviour:
   m_ObjectHideFlags: 0
