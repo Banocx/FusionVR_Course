@@ -29,10 +29,14 @@ public class ButtonInteraction : MonoBehaviour, IInteractiveUI
         if (!_isHighlighted)
         {
             _renderer.material = highlightedMaterial;
+            Debug.Log("Highlighted");
+            _isHighlighted = true;
         }
         else
         {
             _renderer.material = mainMaterial;
+            Debug.Log("Highlighted off");
+            _isHighlighted = false;
         }
     }
 
